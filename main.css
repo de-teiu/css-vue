@@ -1,0 +1,38 @@
+.vue {
+    margin: 0 auto;
+    width: 400px;
+    height: 345px;
+
+	background:
+	linear-gradient(to top right, transparent 50%, #42b883 50.1%) top left/ 50% 100% no-repeat,
+    linear-gradient(to top left, transparent 50%, #42b883 50.1%) top right / 50% 100% no-repeat;
+    text-align: center;
+}
+.vue::before {
+    content:"";
+    display: block;
+    width: 60%;
+    height: 60%;
+    
+    margin: 0 auto;
+    background:
+	linear-gradient(to top right, transparent 50%, #354a5e 50.1%) top left/ 50% 100% no-repeat,
+    linear-gradient(to top left, transparent 50%, #354a5e 50.1%) top right / 50% 100% no-repeat;
+    
+    position: relative;
+}
+
+.vue::after {
+    content:"";
+    display: block;
+    width: 23%;
+    height: 23%;
+    
+    margin: 0 auto;
+    background:
+	linear-gradient(to top right, transparent 50%, white 50.1%) top left/ 50% 100% no-repeat,
+    linear-gradient(to top left, transparent 50%, white 50.1%) top right / 50% 100% no-repeat;
+    position: relative;
+    bottom: 60%;
+    z-index: 2;
+}
